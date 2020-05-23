@@ -24,6 +24,9 @@
 						<th>Temperatura Min</th>
 						<th>Umidade Relativa (hpa)</th>
 						<th>Descricao</th>
+						<th>Data/Hora</th>
+						<th>Latidude</th>
+						<th>Longitude</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -33,6 +36,10 @@
 						<td th:text="${previsao.temperaturamin}"></td>
 						<td th:text="${previsao.umidaderelativa}"></td>
 						<td th:text="${previsao.descricao}"></td>
+						<td th:text="${previsao.datahora}"></td>
+						<td th:text="${previsao.latitude}"></td> 
+						<td th:text="${previsao.longitude}"></td>
+
 				</tbody>
 			</table>
 		</div>
