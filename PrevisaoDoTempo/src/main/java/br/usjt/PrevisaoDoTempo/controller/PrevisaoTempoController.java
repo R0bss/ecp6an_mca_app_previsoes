@@ -20,7 +20,7 @@ public class PrevisaoTempoController {
 	public ModelAndView listarPrevisaoTempo() {
 		ModelAndView mv = new ModelAndView("lista_Previsao_Tempo");
 		List<Previsao> previsaoTempo = previsaoService.listaPrevisaoTempo();
-		mv.addObject("previsaoService", previsaoTempo);
+		mv.addObject("previsaoTempo", previsaoTempo);
 		return mv;
 	}
 }

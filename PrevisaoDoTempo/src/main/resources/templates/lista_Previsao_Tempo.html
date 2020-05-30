@@ -25,20 +25,22 @@
 						<th>Umidade Relativa (hpa)</th>
 						<th>Descricao</th>
 						<th>Data/Hora</th>
+						<th>Cidade</th>
 						<th>Latidude</th>
 						<th>Longitude</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr th:each="previsao:${previsaoTempo}">
-						<td th:text="${previsao.diadasemana}"></td>
+						<td th:text="${previsao.diadasemana.diadasemana}"></td>
 						<td th:text="${previsao.temperaturamax}"></td>
 						<td th:text="${previsao.temperaturamin}"></td>
 						<td th:text="${previsao.umidaderelativa}"></td>
 						<td th:text="${previsao.descricao}"></td>
 						<td th:text="${previsao.datahora}"></td>
-						<td th:text="${previsao.latitude}"></td> 
-						<td th:text="${previsao.longitude}"></td>
+						<td th:text="${previsao.cidade.cidade}"></td>
+						<td th:text="${previsao.cidade.latitude}"></td> 
+						<td th:text="${previsao.cidade.longitude}"></td>
 
 				</tbody>
 			</table>
